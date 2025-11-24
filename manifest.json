@@ -1,0 +1,187 @@
+{
+  "version": 3.1,
+  "presentation": "Soutenance",
+  "slideDict": {
+    "new_slide": "new_slide",
+    "verification": "verification",
+    "Concurrent_Pograms2": "Concurrent_Pograms",
+    "Reachability_Problem": "Reachability_Problem",
+    "Model_Checking": "Model_Checking",
+    "full_reachability": "full_reachability",
+    "Mazurkiewicz_trace_equivalence": "Mazurkiewicz_trace_equivalence",
+    "POR": "POR",
+    "stateless": "stateless",
+    "stateful2": "stateful",
+    "Excellent_POR_algorithm": "Excellent_POR_algorithm"
+  },
+  "tree": {
+    "type": "child",
+    "name": "new slide",
+    "id": "new_slide",
+    "enabled": "enabled",
+    "merged": false,
+    "children": [
+      {
+        "type": "child",
+        "name": "verification",
+        "id": "verification",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "child",
+            "name": "Concurrent Pograms",
+            "id": "Concurrent_Pograms2",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [],
+            "keywords": [
+              "Concurrent Programs",
+              "Here I want to present an intuitive example (train or other) of a concurrent system which will later serve to introduce finite automata (or introduce finite automata right away?)",
+              "Concurrent Pograms"
+            ],
+            "eventId": "1",
+            "originalParams": {}
+          },
+          {
+            "type": "child",
+            "name": "Reachability Problem",
+            "id": "Reachability_Problem",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [],
+            "keywords": [
+              "Reachability Problem",
+              "Here state which problem we study : reachability of final states"
+            ],
+            "eventId": "2",
+            "originalParams": {}
+          },
+          {
+            "type": "child",
+            "name": "Model Checking",
+            "id": "Model_Checking",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "child",
+                "name": "full reachability",
+                "id": "full_reachability",
+                "enabled": "enabled",
+                "merged": false,
+                "children": [],
+                "keywords": [
+                  "State-space exploration",
+                  "A way to do MC = explore the entire state space but combinatorial explosion",
+                  "full reachability"
+                ],
+                "eventId": "2",
+                "originalParams": {}
+              },
+              {
+                "type": "child",
+                "name": "Mazurkiewicz trace equivalence",
+                "id": "Mazurkiewicz_trace_equivalence",
+                "enabled": "enabled",
+                "merged": false,
+                "children": [],
+                "keywords": [
+                  "Mazurkiewicz’s trace equivalence",
+                  "independency, equivalence, explore at least one run per equivalence class",
+                  "Mazurkiewicz trace equivalence"
+                ],
+                "eventId": "1",
+                "originalParams": {}
+              },
+              {
+                "type": "child",
+                "name": "POR",
+                "id": "POR",
+                "enabled": "enabled",
+                "merged": false,
+                "children": [
+                  {
+                    "type": "child",
+                    "name": "stateless",
+                    "id": "stateless",
+                    "enabled": "enabled",
+                    "merged": false,
+                    "children": [],
+                    "keywords": [
+                      "Stateless",
+                      "Stateless = we only enumerate traces define optimality for stateless",
+                      "stateless"
+                    ],
+                    "eventId": "1",
+                    "originalParams": {}
+                  },
+                  {
+                    "type": "child",
+                    "name": "stateful",
+                    "id": "stateful2",
+                    "enabled": "enabled",
+                    "merged": false,
+                    "children": [
+                      {
+                        "type": "child",
+                        "name": "Excellent POR algorithm",
+                        "id": "Excellent_POR_algorithm",
+                        "enabled": "enabled",
+                        "merged": false,
+                        "children": [],
+                        "keywords": [
+                          "Excellent POR algorithm",
+                          "Here state what an excellent POR algorithm is theorem concur25 there is no excellent POR algorithm"
+                        ],
+                        "eventId": "1",
+                        "originalParams": {}
+                      }
+                    ],
+                    "keywords": [
+                      "Stateful",
+                      "Stateful = we store the states define optimality for stateful",
+                      "stateful"
+                    ],
+                    "eventId": "3",
+                    "originalParams": {}
+                  }
+                ],
+                "keywords": [
+                  "Partial-order reduction",
+                  "produces a reduced state space that is sound and complete, literature, notion of optimality",
+                  "POR"
+                ],
+                "eventId": "3",
+                "originalParams": {}
+              }
+            ],
+            "keywords": [
+              "Model Checking",
+              "Given a concurrent program and a property to verify (here reachability), decide whether the property is satisfied or not"
+            ],
+            "eventId": "3",
+            "originalParams": {}
+          }
+        ],
+        "keywords": [
+          "Verification",
+          "verification"
+        ],
+        "eventId": "1",
+        "originalParams": {}
+      }
+    ],
+    "keywords": [
+      "Stateful Partial-Order Reduction Methods for Concurrent Systems with Blocking Instructions",
+      "Sarah Larroze-Jardiné",
+      "PhD Defense - December 16, 2025, Bordeaux, France",
+      "Supervised by Frédéric Herbreteau and Igor Walukiewicz",
+      "new slide"
+    ],
+    "eventId": "root",
+    "originalParams": {}
+  },
+  "treeTimeLine": [],
+  "chronicleTimeLine": []
+}
