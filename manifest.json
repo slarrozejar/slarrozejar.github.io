@@ -12,7 +12,20 @@
     "POR": "POR",
     "stateless": "stateless",
     "stateful2": "stateful",
-    "Excellent_POR_algorithm": "Excellent_POR_algorithm"
+    "Excellent_POR_algorithm": "Excellent_POR_algorithm",
+    "Contributions": "Contributions",
+    "client_server": "client_server",
+    "POR_graph_with_covering": "POR_graph_with_covering",
+    "source_sets": "source_sets",
+    "sleep_sets_sets": "sleep_sets_sets",
+    "node_subsumption": "node_subsumption",
+    "por_with_race_reversals": "por_with_race_reversals",
+    "races": "races",
+    "Explore_not_below": "Explore_not_below",
+    "Explore_above": "Explore_above",
+    "not_below_vs_above": "not_below_vs_above",
+    "experiments": "experiments",
+    "conclusion_and_future_work": "conclusion_and_future_work"
   },
   "tree": {
     "type": "child",
@@ -169,6 +182,194 @@
           "verification"
         ],
         "eventId": "1",
+        "originalParams": {}
+      },
+      {
+        "type": "child",
+        "name": "Contributions",
+        "id": "Contributions",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "child",
+            "name": "client/server",
+            "id": "client_server",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [],
+            "keywords": [
+              "Client/server systems",
+              "show an example and give the intuition that a client represents a shared ressource",
+              "client/server"
+            ],
+            "eventId": "1",
+            "originalParams": {}
+          },
+          {
+            "type": "child",
+            "name": "POR graph with covering",
+            "id": "POR_graph_with_covering",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "child",
+                "name": "source sets",
+                "id": "source_sets",
+                "enabled": "enabled",
+                "merged": false,
+                "children": [],
+                "keywords": [
+                  "Source sets",
+                  "notion of first exploration with source sets sound and complete",
+                  "source sets"
+                ],
+                "eventId": "1",
+                "originalParams": {}
+              },
+              {
+                "type": "child",
+                "name": "sleep sets sets",
+                "id": "sleep_sets_sets",
+                "enabled": "enabled",
+                "merged": false,
+                "children": [],
+                "keywords": [
+                  "Sleep sets",
+                  "Introduce sleep sets Pb of sleep blocked execution",
+                  "sleep sets sets"
+                ],
+                "eventId": "2",
+                "originalParams": {}
+              },
+              {
+                "type": "child",
+                "name": "node subsumption",
+                "id": "node_subsumption",
+                "enabled": "enabled",
+                "merged": false,
+                "children": [],
+                "keywords": [
+                  "Node subsumption",
+                  "example with node duplication give intuition why it is a simulation relation",
+                  "node subsumption"
+                ],
+                "eventId": "3",
+                "originalParams": {}
+              }
+            ],
+            "keywords": [
+              "POR graphs with covering",
+              "POR graph with covering"
+            ],
+            "eventId": "2",
+            "originalParams": {}
+          },
+          {
+            "type": "child",
+            "name": "por with race reversals",
+            "id": "por_with_race_reversals",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "child",
+                "name": "races",
+                "id": "races",
+                "enabled": "enabled",
+                "merged": false,
+                "children": [],
+                "keywords": [
+                  "Races",
+                  "races"
+                ],
+                "eventId": "2",
+                "originalParams": {}
+              },
+              {
+                "type": "child",
+                "name": "Explore not below",
+                "id": "Explore_not_below",
+                "enabled": "enabled",
+                "merged": false,
+                "children": [],
+                "keywords": [
+                  "Explore not below"
+                ],
+                "eventId": "3",
+                "originalParams": {}
+              },
+              {
+                "type": "child",
+                "name": "Explore above",
+                "id": "Explore_above",
+                "enabled": "enabled",
+                "merged": false,
+                "children": [],
+                "keywords": [
+                  "Explore above"
+                ],
+                "eventId": "4",
+                "originalParams": {}
+              },
+              {
+                "type": "child",
+                "name": "not below vs above",
+                "id": "not_below_vs_above",
+                "enabled": "enabled",
+                "merged": false,
+                "children": [],
+                "keywords": [
+                  "Not below vs above",
+                  "not below vs above"
+                ],
+                "eventId": "5",
+                "originalParams": {}
+              }
+            ],
+            "keywords": [
+              "POR with race reversals",
+              "por with race reversals"
+            ],
+            "eventId": "3",
+            "originalParams": {}
+          },
+          {
+            "type": "child",
+            "name": "experiments",
+            "id": "experiments",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [],
+            "keywords": [
+              "Experiments",
+              "experiments"
+            ],
+            "eventId": "4",
+            "originalParams": {}
+          }
+        ],
+        "keywords": [
+          "Contributions of this thesis",
+          "client/server systems as a unified framework POR graph with covering, i.e. all ingredients of our algorithms lexicographic stateful por por with race reversals Implementation and experiments",
+          "Contributions"
+        ],
+        "eventId": "3",
+        "originalParams": {}
+      },
+      {
+        "type": "child",
+        "name": "conclusion and future work",
+        "id": "conclusion_and_future_work",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [],
+        "keywords": [
+          "Conclusion and future work",
+          "conclusion and future work"
+        ],
+        "eventId": "4",
         "originalParams": {}
       }
     ],
