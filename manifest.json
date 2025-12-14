@@ -25,7 +25,35 @@
     "Explore_above": "Explore_above",
     "not_below_vs_above": "not_below_vs_above",
     "experiments": "experiments",
-    "conclusion_and_future_work": "conclusion_and_future_work"
+    "conclusion_and_future_work": "conclusion_and_future_work",
+    "stateless2": "stateless2",
+    "system": "system",
+    "model": "model",
+    "Mazurkiewicz_s_trace_equivalence": "Mazurkiewicz_s_trace_equivalence",
+    "sleep_set_reduced": "sleep_set_reduced",
+    "races_def": "races_def",
+    "crace": "crace",
+    "races_def2": "races_def2",
+    "crace2": "crace2",
+    "algo_not_below": "algo_not_below",
+    "stateless_stateful": "stateless_stateful",
+    "state_of_the_art": "state_of_the_art",
+    "implementation": "implementation",
+    "peterson": "peterson",
+    "filesystem": "filesystem",
+    "lastzero": "lastzero",
+    "system_model": "system_model",
+    "system_": "system_",
+    "perspectives": "perspectives",
+    "static": "static",
+    "dynamic": "dynamic",
+    "optimal_por": "optimal_por",
+    "staful2": "staful",
+    "choices_of_actions": "choices_of_actions",
+    "not_below": "not_below",
+    "above": "above",
+    "Fillbacktrack": "Fillbacktrack",
+    "lexicographic": "lexicographic"
   },
   "tree": {
     "type": "child",
@@ -43,18 +71,73 @@
         "children": [
           {
             "type": "child",
-            "name": "Concurrent Pograms",
-            "id": "Concurrent_Pograms2",
+            "name": "system model",
+            "id": "system_model",
             "enabled": "enabled",
             "merged": false,
-            "children": [],
-            "keywords": [
-              "Concurrent Programs",
-              "Here I want to present an intuitive example (train or other) of a concurrent system which will later serve to introduce finite automata (or introduce finite automata right away?)",
-              "Concurrent Pograms"
+            "children": [
+              {
+                "type": "child",
+                "name": "system ",
+                "id": "system_",
+                "enabled": "enabled",
+                "merged": false,
+                "children": [],
+                "keywords": [
+                  "Eat!",
+                  "Eat but only fresh food!",
+                  "Cléo",
+                  "Niebla",
+                  "Azur",
+                  "system "
+                ],
+                "eventId": "1",
+                "originalParams": {}
+              },
+              {
+                "type": "show",
+                "id": "Group_98",
+                "enabled": "enabled",
+                "name": "await(cat_fresh)",
+                "merged": false,
+                "keywords": [
+                  "await(Azur)",
+                  "eat(Azur)",
+                  "eat(Cléo)",
+                  "eat(Niebla)",
+                  "await(cat_fresh)"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "show",
+                "id": "Group_157",
+                "enabled": "enabled",
+                "name": "await(cat_fresh)",
+                "merged": false,
+                "keywords": [
+                  "await(Azur)",
+                  "eat(Cléo)",
+                  "eat(Azur)",
+                  "eat(Niebla)",
+                  "A run:",
+                  "await(cat_fresh)"
+                ],
+                "eventId": "4"
+              }
             ],
-            "eventId": "1",
-            "originalParams": {}
+            "keywords": [
+              "system model"
+            ],
+            "eventId": "6",
+            "originalParams": {
+              "Group_98": {
+                "opacity": 1
+              },
+              "Group_157": {
+                "opacity": 1
+              }
+            }
           },
           {
             "type": "child",
@@ -62,13 +145,59 @@
             "id": "Reachability_Problem",
             "enabled": "enabled",
             "merged": false,
-            "children": [],
+            "children": [
+              {
+                "type": "show",
+                "id": "Vector_51",
+                "enabled": "enabled",
+                "name": "Vector 51",
+                "merged": false,
+                "keywords": [
+                  "Vector 51"
+                ],
+                "eventId": "5"
+              },
+              {
+                "type": "show",
+                "id": "Group_98",
+                "enabled": "enabled",
+                "name": "final",
+                "merged": false,
+                "keywords": [
+                  "final",
+                  "..."
+                ],
+                "eventId": "10"
+              },
+              {
+                "type": "show",
+                "id": "Group_982",
+                "enabled": "enabled",
+                "name": "final",
+                "merged": false,
+                "keywords": [
+                  "final",
+                  "..."
+                ],
+                "eventId": "15"
+              }
+            ],
             "keywords": [
-              "Reachability Problem",
-              "Here state which problem we study : reachability of final states"
+              "Is a given state reachable?",
+              "Reachability Problem"
             ],
             "eventId": "2",
-            "originalParams": {}
+            "originalParams": {
+              "Vector_51": {
+                "opacity": 1
+              },
+              "Group_98": {
+                "opacity": 1
+              },
+              "Group_982": {
+                "opacity": 1
+              }
+            }
           },
           {
             "type": "child",
@@ -83,29 +212,272 @@
                 "id": "full_reachability",
                 "enabled": "enabled",
                 "merged": false,
-                "children": [],
+                "children": [
+                  {
+                    "type": "show",
+                    "id": "Group_176",
+                    "enabled": "enabled",
+                    "name": "Group 176",
+                    "merged": false,
+                    "keywords": [
+                      "Group 176"
+                    ],
+                    "eventId": "2"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Combinatorial_explosion_",
+                    "enabled": "enabled",
+                    "name": "Combinatorial explosion!",
+                    "merged": false,
+                    "keywords": [
+                      "Combinatorial explosion!"
+                    ],
+                    "eventId": "1"
+                  }
+                ],
                 "keywords": [
                   "State-space exploration",
-                  "A way to do MC = explore the entire state space but combinatorial explosion",
+                  "eat(Cléo)",
+                  "await(Azur)",
+                  "eat(Niebla)",
+                  "eat(cat_food)",
+                  "eat(Azur)",
                   "full reachability"
                 ],
                 "eventId": "2",
-                "originalParams": {}
+                "originalParams": {
+                  "Combinatorial_explosion_": {
+                    "opacity": 1
+                  },
+                  "Group_176": {
+                    "opacity": 1
+                  }
+                }
               },
               {
                 "type": "child",
-                "name": "Mazurkiewicz trace equivalence",
-                "id": "Mazurkiewicz_trace_equivalence",
+                "name": "Mazurkiewicz's trace equivalence",
+                "id": "Mazurkiewicz_s_trace_equivalence",
                 "enabled": "enabled",
                 "merged": false,
-                "children": [],
-                "keywords": [
-                  "Mazurkiewicz’s trace equivalence",
-                  "independency, equivalence, explore at least one run per equivalence class",
-                  "Mazurkiewicz trace equivalence"
+                "children": [
+                  {
+                    "type": "show",
+                    "id": "Group_96",
+                    "enabled": "enabled",
+                    "name": "Group 96",
+                    "merged": false,
+                    "keywords": [
+                      "Group 96"
+                    ],
+                    "eventId": "65"
+                  },
+                  {
+                    "type": "show",
+                    "id": "_Forward__a_and_b_cannot_enable_nor_disable_each_other",
+                    "enabled": "enabled",
+                    "name": "(Forward) a and b cannot enable nor disable each other",
+                    "merged": true,
+                    "keywords": [
+                      "(Forward) a and b cannot enable nor disable each other"
+                    ],
+                    "eventId": "66"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_493",
+                    "enabled": "enabled",
+                    "name": "Group 49",
+                    "merged": false,
+                    "keywords": [
+                      "Group 49"
+                    ],
+                    "eventId": "67"
+                  },
+                  {
+                    "type": "show",
+                    "id": "_Diamond__the_execution_of_ab_and_of_ba_leads_to_the_same_state",
+                    "enabled": "enabled",
+                    "name": "(Diamond) the execution of ab and of ba leads to the same state",
+                    "merged": true,
+                    "keywords": [
+                      "(Diamond) the execution of ab and of ba leads to the same state"
+                    ],
+                    "eventId": "68"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_49",
+                    "enabled": "enabled",
+                    "name": "e.g.",
+                    "merged": true,
+                    "keywords": [
+                      "I I",
+                      "e.g."
+                    ],
+                    "eventId": "69"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Line_13",
+                    "enabled": "enabled",
+                    "name": "Line 13",
+                    "merged": false,
+                    "keywords": [
+                      "Line 13"
+                    ],
+                    "eventId": "80"
+                  },
+                  {
+                    "type": "hide",
+                    "id": "Group_96",
+                    "enabled": "enabled",
+                    "name": "Group 96",
+                    "merged": true,
+                    "keywords": [
+                      "Group 96"
+                    ],
+                    "eventId": "70"
+                  },
+                  {
+                    "type": "hide",
+                    "id": "Group_493",
+                    "enabled": "enabled",
+                    "name": "Group 49",
+                    "merged": true,
+                    "keywords": [
+                      "Group 49"
+                    ],
+                    "eventId": "71"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_492",
+                    "enabled": "enabled",
+                    "name": "D",
+                    "merged": true,
+                    "keywords": [
+                      "await(Azur) D eat(Azur)",
+                      "D"
+                    ],
+                    "eventId": "73"
+                  },
+                  {
+                    "type": "hide",
+                    "id": "Line_13",
+                    "enabled": "enabled",
+                    "name": "Line 13",
+                    "merged": false,
+                    "keywords": [
+                      "Line 13"
+                    ],
+                    "eventId": "81"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_22",
+                    "enabled": "enabled",
+                    "name": "Mazurkiewicz’s trace equivalence [Maz 95] Two runs are equivalent (~) if one can be obtained from the other by permuting adjacent independent actions.",
+                    "merged": true,
+                    "keywords": [
+                      "Mazurkiewicz’s trace equivalence [Maz 95] Two runs are equivalent (~) if one can be obtained from the other by permuting adjacent independent actions."
+                    ],
+                    "eventId": "75"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_51",
+                    "enabled": "enabled",
+                    "name": "Group 51",
+                    "merged": false,
+                    "keywords": [
+                      "Group 51"
+                    ],
+                    "eventId": "76"
+                  },
+                  {
+                    "type": "hide",
+                    "id": "Group_51",
+                    "enabled": "enabled",
+                    "name": "Group 51",
+                    "merged": false,
+                    "keywords": [
+                      "Group 51"
+                    ],
+                    "eventId": "77"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_97",
+                    "enabled": "enabled",
+                    "name": "Group 97",
+                    "merged": true,
+                    "keywords": [
+                      "Group 97"
+                    ],
+                    "eventId": "78"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_98",
+                    "enabled": "enabled",
+                    "name": "Combinatorial explosion!",
+                    "merged": false,
+                    "keywords": [
+                      "Combinatorial explosion!",
+                      "trace"
+                    ],
+                    "eventId": "79"
+                  }
                 ],
-                "eventId": "1",
-                "originalParams": {}
+                "keywords": [
+                  "eat(Cléo)",
+                  "eat(Azur)",
+                  "eat(Niebla)",
+                  "await(Azur)",
+                  "Mazurkiewicz’s trace equivalence [Maz 95] Two runs are equivalent (~) if one can be obtained from the other by permuting adjacent independent actions.",
+                  "Mazurkiewicz's trace equivalence"
+                ],
+                "eventId": "5",
+                "originalParams": {
+                  "Group_96": {
+                    "opacity": 1
+                  },
+                  "_Forward__a_and_b_cannot_enable_nor_disable_each_other": {
+                    "opacity": 1
+                  },
+                  "Group_493": {
+                    "opacity": 1
+                  },
+                  "_Diamond__the_execution_of_ab_and_of_ba_leads_to_the_same_state": {
+                    "opacity": 1
+                  },
+                  "Group_49": {
+                    "opacity": 1
+                  },
+                  "Group_50": {
+                    "opacity": 0.10000000149011612
+                  },
+                  "Group_492": {
+                    "opacity": 1
+                  },
+                  "Group_22": {
+                    "opacity": 1
+                  },
+                  "Group_51": {
+                    "opacity": 1
+                  },
+                  "Group_97": {
+                    "opacity": 1
+                  },
+                  "Group_98": {
+                    "opacity": 1
+                  },
+                  "Line_13": {
+                    "opacity": 1
+                  }
+                }
               },
               {
                 "type": "child",
@@ -115,70 +487,657 @@
                 "merged": false,
                 "children": [
                   {
-                    "type": "child",
-                    "name": "stateless",
-                    "id": "stateless",
+                    "type": "show",
+                    "id": "Group_177",
                     "enabled": "enabled",
+                    "name": "Theorem Partial-order reduction preserves the reachability of final and deadlock states",
                     "merged": false,
-                    "children": [],
                     "keywords": [
-                      "Stateless",
-                      "Stateless = we only enumerate traces define optimality for stateless",
-                      "stateless"
+                      "Theorem Partial-order reduction preserves the reachability of final and deadlock states"
                     ],
-                    "eventId": "1",
-                    "originalParams": {}
+                    "eventId": "13"
                   },
                   {
                     "type": "child",
-                    "name": "stateful",
-                    "id": "stateful2",
+                    "name": "state of the art",
+                    "id": "state_of_the_art",
                     "enabled": "enabled",
                     "merged": false,
                     "children": [
                       {
                         "type": "child",
-                        "name": "Excellent POR algorithm",
-                        "id": "Excellent_POR_algorithm",
+                        "name": "static",
+                        "id": "static",
+                        "enabled": "enabled",
+                        "merged": false,
+                        "children": [
+                          {
+                            "type": "show",
+                            "id": "Group_56",
+                            "enabled": "enabled",
+                            "name": "Group 56",
+                            "merged": false,
+                            "keywords": [
+                              "Choice made beforehand",
+                              "Group 56"
+                            ],
+                            "eventId": "3"
+                          },
+                          {
+                            "type": "hide",
+                            "id": "Group_60",
+                            "enabled": "enabled",
+                            "name": "Group 60",
+                            "merged": true,
+                            "keywords": [
+                              "Group 60"
+                            ],
+                            "eventId": "8"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Group_57",
+                            "enabled": "enabled",
+                            "name": "Group 57",
+                            "merged": false,
+                            "keywords": [
+                              "Group 57"
+                            ],
+                            "eventId": "4"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Group_61",
+                            "enabled": "enabled",
+                            "name": "Group 61",
+                            "merged": true,
+                            "keywords": [
+                              "Group 61"
+                            ],
+                            "eventId": "10"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Group_58",
+                            "enabled": "enabled",
+                            "name": "Group 58",
+                            "merged": false,
+                            "keywords": [
+                              "Group 58"
+                            ],
+                            "eventId": "5"
+                          },
+                          {
+                            "type": "hide",
+                            "id": "Group_61",
+                            "enabled": "enabled",
+                            "name": "Group 61",
+                            "merged": true,
+                            "keywords": [
+                              "Group 61"
+                            ],
+                            "eventId": "9"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Group_59",
+                            "enabled": "enabled",
+                            "name": "Group 59",
+                            "merged": false,
+                            "keywords": [
+                              "Group 59"
+                            ],
+                            "eventId": "6"
+                          }
+                        ],
+                        "keywords": [
+                          "static"
+                        ],
+                        "eventId": "8",
+                        "originalParams": {
+                          "Group_56": {
+                            "opacity": 1
+                          },
+                          "Group_57": {
+                            "opacity": 1
+                          },
+                          "Group_58": {
+                            "opacity": 1
+                          },
+                          "Group_59": {
+                            "opacity": 1
+                          },
+                          "Group_60": {
+                            "opacity": 1
+                          },
+                          "Group_61": {
+                            "opacity": 1
+                          }
+                        }
+                      },
+                      {
+                        "type": "show",
+                        "id": "Dynamic_partial_order_reduction_dynamic__choice_of_actions_to_explore_from_a_state_is_done_during_the_exploration_by_exploiting_what_has_already_been_explored___stateless__FlaGod2005____Stateful__YCGK2008_",
+                        "enabled": "enabled",
+                        "name": "Dynamic partial order reduction dynamic: choice of actions to explore from a state is done during the exploration by exploiting what has already been explored → stateless [FlaGod05] → Stateful [YCGK08]",
+                        "merged": false,
+                        "keywords": [
+                          "Dynamic partial order reduction dynamic: choice of actions to explore from a state is done during the exploration by exploiting what has already been explored → stateless [FlaGod05] → Stateful [YCGK08]"
+                        ],
+                        "eventId": "2"
+                      },
+                      {
+                        "type": "child",
+                        "name": "dynamic",
+                        "id": "dynamic",
+                        "enabled": "enabled",
+                        "merged": false,
+                        "children": [
+                          {
+                            "type": "show",
+                            "id": "Group_62",
+                            "enabled": "enabled",
+                            "name": "?",
+                            "merged": false,
+                            "keywords": [
+                              "?"
+                            ],
+                            "eventId": "1"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Polygon_15",
+                            "enabled": "enabled",
+                            "name": "Polygon 15",
+                            "merged": false,
+                            "keywords": [
+                              "Polygon 15"
+                            ],
+                            "eventId": "11"
+                          },
+                          {
+                            "type": "hide",
+                            "id": "Group_62",
+                            "enabled": "enabled",
+                            "name": "?",
+                            "merged": true,
+                            "keywords": [
+                              "?"
+                            ],
+                            "eventId": "12"
+                          },
+                          {
+                            "type": "hide",
+                            "id": "Arrow_81",
+                            "enabled": "enabled",
+                            "name": "Arrow 81",
+                            "merged": true,
+                            "keywords": [
+                              "Arrow 81"
+                            ],
+                            "eventId": "13"
+                          },
+                          {
+                            "type": "hide",
+                            "id": "Group_65",
+                            "enabled": "enabled",
+                            "name": ". . .",
+                            "merged": false,
+                            "keywords": [
+                              ". . ."
+                            ],
+                            "eventId": "15"
+                          },
+                          {
+                            "type": "hide",
+                            "id": "Polygon_15",
+                            "enabled": "enabled",
+                            "name": "Polygon 15",
+                            "merged": true,
+                            "keywords": [
+                              "Polygon 15"
+                            ],
+                            "eventId": "16"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Group_652",
+                            "enabled": "enabled",
+                            "name": "?",
+                            "merged": true,
+                            "keywords": [
+                              "?"
+                            ],
+                            "eventId": "17"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Group_653",
+                            "enabled": "enabled",
+                            "name": "Choice based on semantic conditions made by reexploring",
+                            "merged": false,
+                            "keywords": [
+                              "Discovered during the exploration",
+                              "Choice based on semantic conditions made by reexploring"
+                            ],
+                            "eventId": "18"
+                          }
+                        ],
+                        "keywords": [
+                          ". . .",
+                          "dynamic"
+                        ],
+                        "eventId": "6",
+                        "originalParams": {
+                          "Group_62": {
+                            "opacity": 1
+                          },
+                          "Polygon_15": {
+                            "opacity": 1
+                          },
+                          "Arrow_81": {
+                            "opacity": 1
+                          },
+                          "Group_65": {
+                            "opacity": 1
+                          },
+                          "Group_652": {
+                            "opacity": 1
+                          },
+                          "Group_653": {
+                            "opacity": 1
+                          }
+                        }
+                      },
+                      {
+                        "type": "show",
+                        "id": "__stateless__FlaGod05_",
+                        "enabled": "enabled",
+                        "name": "→ stateless [FlaGod05]",
+                        "merged": false,
+                        "keywords": [
+                          "→ stateless [FlaGod05]"
+                        ],
+                        "eventId": "10"
+                      },
+                      {
+                        "type": "child",
+                        "name": "stateless",
+                        "id": "stateless",
+                        "enabled": "enabled",
+                        "merged": false,
+                        "children": [
+                          {
+                            "type": "show",
+                            "id": "Arrow_85",
+                            "enabled": "enabled",
+                            "name": "Arrow 85",
+                            "merged": false,
+                            "keywords": [
+                              "Arrow 85"
+                            ],
+                            "eventId": "2"
+                          },
+                          {
+                            "type": "hide",
+                            "id": "Arrow_84",
+                            "enabled": "enabled",
+                            "name": "Arrow 84",
+                            "merged": true,
+                            "keywords": [
+                              "Arrow 84"
+                            ],
+                            "eventId": "3"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Arrow_87",
+                            "enabled": "enabled",
+                            "name": "Arrow 87",
+                            "merged": true,
+                            "keywords": [
+                              "Arrow 87"
+                            ],
+                            "eventId": "4"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Group_66",
+                            "enabled": "enabled",
+                            "name": "...",
+                            "merged": false,
+                            "keywords": [
+                              "..."
+                            ],
+                            "eventId": "5"
+                          },
+                          {
+                            "type": "hide",
+                            "id": "Arrow_85",
+                            "enabled": "enabled",
+                            "name": "Arrow 85",
+                            "merged": true,
+                            "keywords": [
+                              "Arrow 85"
+                            ],
+                            "eventId": "6"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Arrow_88",
+                            "enabled": "enabled",
+                            "name": "Arrow 88",
+                            "merged": true,
+                            "keywords": [
+                              "Arrow 88"
+                            ],
+                            "eventId": "7"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Line_17",
+                            "enabled": "enabled",
+                            "name": "Line 17",
+                            "merged": false,
+                            "keywords": [
+                              "Line 17"
+                            ],
+                            "eventId": "8"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Store_only_one_run_at_a_time__polynomial_memory_consumption_",
+                            "enabled": "enabled",
+                            "name": "Store only one run at a time: polynomial memory consumption",
+                            "merged": true,
+                            "keywords": [
+                              "Store only one run at a time: polynomial memory consumption"
+                            ],
+                            "eventId": "9"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Group_69",
+                            "enabled": "enabled",
+                            "name": "A same transition can be explored exponentially many times",
+                            "merged": false,
+                            "keywords": [
+                              "A same transition can be explored exponentially many times"
+                            ],
+                            "eventId": "10"
+                          }
+                        ],
+                        "keywords": [
+                          "stateless"
+                        ],
+                        "eventId": "9",
+                        "originalParams": {
+                          "Arrow_85": {
+                            "opacity": 1
+                          },
+                          "Arrow_84": {
+                            "opacity": 1
+                          },
+                          "Arrow_87": {
+                            "opacity": 1
+                          },
+                          "Group_66": {
+                            "opacity": 1
+                          },
+                          "Arrow_88": {
+                            "opacity": 1
+                          },
+                          "Line_17": {
+                            "opacity": 1
+                          },
+                          "Store_only_one_run_at_a_time__polynomial_memory_consumption_": {
+                            "opacity": 1
+                          },
+                          "Group_69": {
+                            "opacity": 1
+                          }
+                        }
+                      },
+                      {
+                        "type": "show",
+                        "id": "__stateless__FlaGod05____Stateful__YCGK08_",
+                        "enabled": "enabled",
+                        "name": "→ Stateful [YCGK08]",
+                        "merged": false,
+                        "keywords": [
+                          "→ Stateful [YCGK08]"
+                        ],
+                        "eventId": "11"
+                      },
+                      {
+                        "type": "child",
+                        "name": "staful",
+                        "id": "staful2",
+                        "enabled": "enabled",
+                        "merged": false,
+                        "children": [
+                          {
+                            "type": "show",
+                            "id": "Group_69",
+                            "enabled": "enabled",
+                            "name": "Group 69",
+                            "merged": false,
+                            "keywords": [
+                              "Group 69"
+                            ],
+                            "eventId": "1"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Arrow_96",
+                            "enabled": "enabled",
+                            "name": "Arrow 96",
+                            "merged": false,
+                            "keywords": [
+                              "Arrow 96"
+                            ],
+                            "eventId": "2"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Group_70",
+                            "enabled": "enabled",
+                            "name": "Store only one run at a time: polynomial memory consumption",
+                            "merged": false,
+                            "keywords": [
+                              "Store only one run at a time: polynomial memory consumption"
+                            ],
+                            "eventId": "3"
+                          },
+                          {
+                            "type": "show",
+                            "id": "A_same_transition_can_be_explored_exponentially_many_times",
+                            "enabled": "enabled",
+                            "name": "A same transition can be explored exponentially many times",
+                            "merged": false,
+                            "keywords": [
+                              "Builds a DAG: exponential memory consumption",
+                              "A same transition can be explored exponentially many times"
+                            ],
+                            "eventId": "4"
+                          }
+                        ],
+                        "keywords": [
+                          "...",
+                          "staful"
+                        ],
+                        "eventId": "12",
+                        "originalParams": {
+                          "Group_69": {
+                            "opacity": 1
+                          },
+                          "Arrow_96": {
+                            "opacity": 1
+                          },
+                          "Group_70": {
+                            "opacity": 1
+                          },
+                          "A_same_transition_can_be_explored_exponentially_many_times": {
+                            "opacity": 1
+                          }
+                        }
+                      },
+                      {
+                        "type": "show",
+                        "id": "Optimal_dynamic_POR__AAJS14__KMGV22__optimal__explore_exactly_one_representative_per_equivalence_class",
+                        "enabled": "enabled",
+                        "name": "Optimal dynamic POR [AAJS14, KMGV22] optimal: explore exactly one representative per equivalence class",
+                        "merged": false,
+                        "keywords": [
+                          "Optimal dynamic POR [AAJS14, KMGV22] optimal: explore exactly one representative per equivalence class"
+                        ],
+                        "eventId": "3"
+                      },
+                      {
+                        "type": "child",
+                        "name": "optimal por",
+                        "id": "optimal_por",
                         "enabled": "enabled",
                         "merged": false,
                         "children": [],
                         "keywords": [
-                          "Excellent POR algorithm",
-                          "Here state what an excellent POR algorithm is theorem concur25 there is no excellent POR algorithm"
+                          "Combinatorial explosion!",
+                          "eat(Cléo)",
+                          "eat(Azur)",
+                          "eat(Niebla)",
+                          "await(Azur)",
+                          "optimal por"
                         ],
-                        "eventId": "1",
+                        "eventId": "7",
                         "originalParams": {}
+                      },
+                      {
+                        "type": "show",
+                        "id": "Ellipse_17",
+                        "enabled": "enabled",
+                        "name": "Ellipse 17",
+                        "merged": false,
+                        "keywords": [
+                          "Ellipse 17"
+                        ],
+                        "eventId": "4"
+                      }
+                    ],
+                    "keywords": [
+                      "Promising results with static POR methods [God94,Val91,KP92] static: choice of actions to explore from a state is done beforehand",
+                      "Short history of POR",
+                      "state of the art"
+                    ],
+                    "eventId": "11",
+                    "originalParams": {
+                      "Dynamic_partial_order_reduction_dynamic__choice_of_actions_to_explore_from_a_state_is_done_during_the_exploration_by_exploiting_what_has_already_been_explored___stateless__FlaGod2005____Stateful__YCGK2008_": {
+                        "opacity": 1
+                      },
+                      "Optimal_dynamic_POR__AAJS14__KMGV22__optimal__explore_exactly_one_representative_per_equivalence_class": {
+                        "opacity": 1
+                      },
+                      "Ellipse_17": {
+                        "opacity": 1
+                      },
+                      "__stateless__FlaGod05_": {
+                        "opacity": 1
+                      },
+                      "__stateless__FlaGod05____Stateful__YCGK08_": {
+                        "opacity": 1
+                      }
+                    }
+                  },
+                  {
+                    "type": "child",
+                    "name": "stateless stateful",
+                    "id": "stateless_stateful",
+                    "enabled": "enabled",
+                    "merged": false,
+                    "children": [
+                      {
+                        "type": "show",
+                        "id": "Group_35",
+                        "enabled": "enabled",
+                        "name": "Stateful optimality [HLW25] TSr is stateful-optimal if it has the smallest number of states of a reduced state-space for the program",
+                        "merged": false,
+                        "keywords": [
+                          "Stateful optimality [HLW25] TSr is stateful-optimal if it has the smallest number of states of a reduced state-space for the program",
+                          "minTS"
+                        ],
+                        "eventId": "2"
+                      },
+                      {
+                        "type": "show",
+                        "id": "Group_37",
+                        "enabled": "enabled",
+                        "name": "Alg is an excellent POR algorithm if there are polynomials q and r such that Alg builds a POR TSr for P: bounded in size by q(minTS) bounded in time by r(|P|+minTS)",
+                        "merged": false,
+                        "keywords": [
+                          "Alg is an excellent POR algorithm if there are polynomials q and r such that Alg builds a POR TSr for P: bounded in size by q(minTS) bounded in time by r(|P|+minTS)"
+                        ],
+                        "eventId": "3"
+                      },
+                      {
+                        "type": "show",
+                        "id": "Group_372",
+                        "enabled": "enabled",
+                        "name": "Theorem [HLW25] There is no excellent POR algorithm unless P=NP",
+                        "merged": false,
+                        "keywords": [
+                          "Theorem [HLW25] There is no excellent POR algorithm unless P=NP"
+                        ],
+                        "eventId": "4"
                       }
                     ],
                     "keywords": [
                       "Stateful",
-                      "Stateful = we store the states define optimality for stateful",
-                      "stateful"
+                      "stateless stateful"
                     ],
-                    "eventId": "3",
-                    "originalParams": {}
+                    "eventId": "10",
+                    "originalParams": {
+                      "Group_36": {
+                        "opacity": 1
+                      },
+                      "Group_35": {
+                        "opacity": 1
+                      },
+                      "Group_37": {
+                        "opacity": 1
+                      },
+                      "Group_372": {
+                        "opacity": 1
+                      }
+                    }
                   }
                 ],
                 "keywords": [
-                  "Partial-order reduction",
-                  "produces a reduced state space that is sound and complete, literature, notion of optimality",
+                  "Mazurkiewicz’s trace equivalence [Maz 95] Two runs are equivalent (~) if one can be obtained from the other by permuting adjacent independent actions.",
+                  "eat(Cléo)",
+                  "eat(Azur)",
+                  "eat(Niebla)",
+                  "await(Azur)",
                   "POR"
                 ],
                 "eventId": "3",
-                "originalParams": {}
+                "originalParams": {
+                  "Group_177": {
+                    "opacity": 1
+                  }
+                }
               }
             ],
             "keywords": [
-              "Model Checking",
-              "Given a concurrent program and a property to verify (here reachability), decide whether the property is satisfied or not"
+              "Is a final state reachable in the given concurrent program?",
+              "Model Checking"
             ],
             "eventId": "3",
             "originalParams": {}
           }
         ],
         "keywords": [
-          "Verification",
+          "System Model",
+          "Property Specification",
+          "Model Checking",
           "verification"
         ],
         "eventId": "1",
@@ -197,14 +1156,51 @@
             "id": "client_server",
             "enabled": "enabled",
             "merged": false,
-            "children": [],
+            "children": [
+              {
+                "type": "show",
+                "id": "Action__synchronization_of_one_client_with_one_server",
+                "enabled": "enabled",
+                "name": "Action: synchronization of one client with one server",
+                "merged": false,
+                "keywords": [
+                  "Action: synchronization of one client with one server"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "Independency__actions_of_distinct_processes",
+                "enabled": "enabled",
+                "name": "Independency: actions of distinct processes",
+                "merged": false,
+                "keywords": [
+                  "Independency: actions of distinct processes"
+                ],
+                "eventId": "2"
+              }
+            ],
             "keywords": [
-              "Client/server systems",
-              "show an example and give the intuition that a client represents a shared ressource",
+              "Server processes",
+              "Acyclic client processes",
+              "eat(Cléo)",
+              "await(Azur)",
+              "eat(Niebla)",
+              "eat(Azur)",
               "client/server"
             ],
             "eventId": "1",
-            "originalParams": {}
+            "originalParams": {
+              "Action__synchronization_of_one_client_with_one_server": {
+                "opacity": 1
+              },
+              "Independency__actions_of_distinct_processes": {
+                "opacity": 1
+              },
+              "Group_160": {
+                "opacity": 1
+              }
+            }
           },
           {
             "type": "child",
@@ -214,19 +1210,61 @@
             "merged": false,
             "children": [
               {
-                "type": "child",
-                "name": "source sets",
-                "id": "source_sets",
+                "type": "show",
+                "id": "Group_26",
                 "enabled": "enabled",
+                "name": "system state",
                 "merged": false,
-                "children": [],
                 "keywords": [
-                  "Source sets",
-                  "notion of first exploration with source sets sound and complete",
-                  "source sets"
+                  "node =",
+                  "system state"
                 ],
-                "eventId": "1",
-                "originalParams": {}
+                "eventId": "43"
+              },
+              {
+                "type": "show",
+                "id": "Group_11",
+                "enabled": "enabled",
+                "name": "actions to explore",
+                "merged": false,
+                "keywords": [
+                  "actions to explore"
+                ],
+                "eventId": "21"
+              },
+              {
+                "type": "show",
+                "id": "Group_8",
+                "enabled": "enabled",
+                "name": "Group 8",
+                "merged": true,
+                "keywords": [
+                  "Group 8"
+                ],
+                "eventId": "23"
+              },
+              {
+                "type": "hide",
+                "id": "Group_8",
+                "enabled": "enabled",
+                "name": "Group 8",
+                "merged": false,
+                "keywords": [
+                  "Group 8"
+                ],
+                "eventId": "24"
+              },
+              {
+                "type": "show",
+                "id": "Group_112",
+                "enabled": "enabled",
+                "name": "actions blocked",
+                "merged": true,
+                "keywords": [
+                  "actions blocked",
+                  "[God94]"
+                ],
+                "eventId": "26"
               },
               {
                 "type": "child",
@@ -234,106 +1272,1769 @@
                 "id": "sleep_sets_sets",
                 "enabled": "enabled",
                 "merged": false,
-                "children": [],
+                "children": [
+                  {
+                    "type": "show",
+                    "id": "Group_20",
+                    "enabled": "enabled",
+                    "name": "Group 20",
+                    "merged": false,
+                    "keywords": [
+                      "Group 20"
+                    ],
+                    "eventId": "1"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_23",
+                    "enabled": "enabled",
+                    "name": "already explored",
+                    "merged": true,
+                    "keywords": [
+                      "already explored",
+                      "if then:"
+                    ],
+                    "eventId": "5"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_22",
+                    "enabled": "enabled",
+                    "name": "Combinatorial explosion!",
+                    "merged": false,
+                    "keywords": [
+                      "Combinatorial explosion!"
+                    ],
+                    "eventId": "2"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_222",
+                    "enabled": "enabled",
+                    "name": "top-down propagation",
+                    "merged": true,
+                    "keywords": [
+                      "top-down propagation"
+                    ],
+                    "eventId": "4"
+                  },
+                  {
+                    "type": "child",
+                    "name": "sleep-set reduced",
+                    "id": "sleep_set_reduced",
+                    "enabled": "enabled",
+                    "merged": false,
+                    "children": [
+                      {
+                        "type": "show",
+                        "id": "Group_21",
+                        "enabled": "enabled",
+                        "name": "Combinatorial explosion!",
+                        "merged": true,
+                        "keywords": [
+                          "Combinatorial explosion!"
+                        ],
+                        "eventId": "2"
+                      }
+                    ],
+                    "keywords": [
+                      "Sleep-set reduced state-space exploration",
+                      "eat(Cléo)",
+                      "eat(Azur)",
+                      "eat(Niebla)",
+                      "{eat(Niebla)}",
+                      "{eat(Azur)}",
+                      "await(Azur)",
+                      "{await(Azur)}",
+                      "{eat(Cléo), eat(Azur)}",
+                      "{eat(Cléo)}",
+                      "sleep-set reduced"
+                    ],
+                    "eventId": "8",
+                    "originalParams": {
+                      "Group_21": {
+                        "opacity": 1
+                      },
+                      "Group_162": {
+                        "opacity": 1
+                      }
+                    }
+                  }
+                ],
                 "keywords": [
-                  "Sleep sets",
-                  "Introduce sleep sets Pb of sleep blocked execution",
+                  "...",
+                  "already explored",
                   "sleep sets sets"
                 ],
                 "eventId": "2",
-                "originalParams": {}
+                "originalParams": {
+                  "Group_20": {
+                    "opacity": 1
+                  },
+                  "Group_22": {
+                    "opacity": 1
+                  },
+                  "Group_222": {
+                    "opacity": 1
+                  },
+                  "Group_23": {
+                    "opacity": 1
+                  }
+                }
               },
               {
                 "type": "child",
-                "name": "node subsumption",
-                "id": "node_subsumption",
+                "name": "source sets",
+                "id": "source_sets",
                 "enabled": "enabled",
                 "merged": false,
-                "children": [],
-                "keywords": [
-                  "Node subsumption",
-                  "example with node duplication give intuition why it is a simulation relation",
-                  "node subsumption"
+                "children": [
+                  {
+                    "type": "show",
+                    "id": "Text",
+                    "enabled": "enabled",
+                    "name": "\\text{first}(u)=\\{ a | u ∼ au’ \\}",
+                    "merged": false,
+                    "keywords": [
+                      "\\text{first}(u)=\\{ a | u ∼ au’ \\}"
+                    ],
+                    "eventId": "4"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Line_13",
+                    "enabled": "enabled",
+                    "name": "Line 1",
+                    "merged": false,
+                    "keywords": [
+                      "Line 1"
+                    ],
+                    "eventId": "8"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Line_1",
+                    "enabled": "enabled",
+                    "name": "Line 1",
+                    "merged": true,
+                    "keywords": [
+                      "Line 1"
+                    ],
+                    "eventId": "9"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_17",
+                    "enabled": "enabled",
+                    "name": "e.g.",
+                    "merged": true,
+                    "keywords": [
+                      "e.g.",
+                      "{await(Azur), eat(Niebla)}"
+                    ],
+                    "eventId": "11"
+                  },
+                  {
+                    "type": "hide",
+                    "id": "Line_13",
+                    "enabled": "enabled",
+                    "name": "Line 1",
+                    "merged": false,
+                    "keywords": [
+                      "Line 1"
+                    ],
+                    "eventId": "12"
+                  },
+                  {
+                    "type": "hide",
+                    "id": "Line_1",
+                    "enabled": "enabled",
+                    "name": "Line 1",
+                    "merged": true,
+                    "keywords": [
+                      "Line 1"
+                    ],
+                    "eventId": "13"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_172",
+                    "enabled": "enabled",
+                    "name": "Text",
+                    "merged": true,
+                    "keywords": [
+                      "{eat(Niebla), eat(Cléo)}",
+                      "Text"
+                    ],
+                    "eventId": "14"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Line_2",
+                    "enabled": "enabled",
+                    "name": "Line 2",
+                    "merged": true,
+                    "keywords": [
+                      "Line 2"
+                    ],
+                    "eventId": "15"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Line_3",
+                    "enabled": "enabled",
+                    "name": "Line 3",
+                    "merged": true,
+                    "keywords": [
+                      "Line 3"
+                    ],
+                    "eventId": "16"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_164",
+                    "enabled": "enabled",
+                    "name": "{await(cat_fresh), eat(dog_food)}",
+                    "merged": false,
+                    "keywords": [
+                      "{await(Azur), eat(Niebla)}",
+                      "{await(cat_fresh), eat(dog_food)}"
+                    ],
+                    "eventId": "29"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_1642",
+                    "enabled": "enabled",
+                    "name": "Group 164",
+                    "merged": true,
+                    "keywords": [
+                      "Group 164"
+                    ],
+                    "eventId": "30"
+                  },
+                  {
+                    "type": "hide",
+                    "id": "Line_2",
+                    "enabled": "enabled",
+                    "name": "Line 2",
+                    "merged": true,
+                    "keywords": [
+                      "Line 2"
+                    ],
+                    "eventId": "17"
+                  },
+                  {
+                    "type": "hide",
+                    "id": "Line_3",
+                    "enabled": "enabled",
+                    "name": "Line 3",
+                    "merged": true,
+                    "keywords": [
+                      "Line 3"
+                    ],
+                    "eventId": "18"
+                  },
+                  {
+                    "type": "hide",
+                    "id": "Group_1642",
+                    "enabled": "enabled",
+                    "name": "Group 164",
+                    "merged": false,
+                    "keywords": [
+                      "Group 164"
+                    ],
+                    "eventId": "31"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_39",
+                    "enabled": "enabled",
+                    "name": "Source set of a state s [AAJS17]: Subset of actions source s.t.",
+                    "merged": true,
+                    "keywords": [
+                      "Source set of a state s [AAJS17]: Subset of actions source s.t."
+                    ],
+                    "eventId": "23"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Line_4",
+                    "enabled": "enabled",
+                    "name": "Line 4",
+                    "merged": false,
+                    "keywords": [
+                      "Line 4"
+                    ],
+                    "eventId": "20"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_174",
+                    "enabled": "enabled",
+                    "name": "→ is a source set of the state",
+                    "merged": true,
+                    "keywords": [
+                      "→ {eat(Niebla), await(Azur)} is a source set of the initial state",
+                      "→ is a source set of the state"
+                    ],
+                    "eventId": "22"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_37",
+                    "enabled": "enabled",
+                    "name": "Theorem [AAJS17] Let TSr be a reduction of a system by exploring source sets in each state. For every run from the initial state, there is a run in TSr from the initial state such that",
+                    "merged": false,
+                    "keywords": [
+                      "Theorem [AAJS17] Let TSr be a reduction of a system by exploring source sets in each state. For every run from the initial state, there is a run in TSr from the initial state such that"
+                    ],
+                    "eventId": "24"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Line_16",
+                    "enabled": "enabled",
+                    "name": "Line 16",
+                    "merged": false,
+                    "keywords": [
+                      "Line 16"
+                    ],
+                    "eventId": "26"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Line_17",
+                    "enabled": "enabled",
+                    "name": "Line 17",
+                    "merged": true,
+                    "keywords": [
+                      "Line 17"
+                    ],
+                    "eventId": "28"
+                  }
                 ],
-                "eventId": "3",
-                "originalParams": {}
+                "keywords": [
+                  "Source sets",
+                  "Goal: each run should be represented",
+                  ":",
+                  "eat(Cléo)",
+                  "eat(Azur)",
+                  "eat(Niebla)",
+                  "await(Azur)",
+                  "source sets"
+                ],
+                "eventId": "1",
+                "originalParams": {
+                  "Text": {
+                    "opacity": 1
+                  },
+                  "Line_13": {
+                    "opacity": 1
+                  },
+                  "Line_1": {
+                    "opacity": 1
+                  },
+                  "Group_17": {
+                    "opacity": 1
+                  },
+                  "Group_172": {
+                    "opacity": 1
+                  },
+                  "Line_2": {
+                    "opacity": 1
+                  },
+                  "Line_3": {
+                    "opacity": 1
+                  },
+                  "Line_4": {
+                    "opacity": 1
+                  },
+                  "Group_174": {
+                    "opacity": 1
+                  },
+                  "Group_39": {
+                    "opacity": 1
+                  },
+                  "Group_37": {
+                    "opacity": 1
+                  },
+                  "Line_16": {
+                    "opacity": 1
+                  },
+                  "Line_17": {
+                    "opacity": 1
+                  },
+                  "Group_164": {
+                    "opacity": 1
+                  },
+                  "Group_1642": {
+                    "opacity": 1
+                  }
+                }
+              },
+              {
+                "type": "show",
+                "id": "Group_180",
+                "enabled": "enabled",
+                "name": "Source set",
+                "merged": false,
+                "keywords": [
+                  "Source set"
+                ],
+                "eventId": "49"
+              },
+              {
+                "type": "show",
+                "id": "_text_state___n_1_____text_state___n_2_",
+                "enabled": "enabled",
+                "name": "\\text{state} (n_1) = \\text{state} (n_2)",
+                "merged": false,
+                "keywords": [
+                  "\\text{state} (n_1) = \\text{state} (n_2)"
+                ],
+                "eventId": "44"
+              },
+              {
+                "type": "show",
+                "id": "Group_252",
+                "enabled": "enabled",
+                "name": "Group 25",
+                "merged": true,
+                "keywords": [
+                  "Group 25"
+                ],
+                "eventId": "41"
+              },
+              {
+                "type": "show",
+                "id": "Polygon_7",
+                "enabled": "enabled",
+                "name": "Polygon 7",
+                "merged": true,
+                "keywords": [
+                  "Polygon 7"
+                ],
+                "eventId": "42"
+              },
+              {
+                "type": "show",
+                "id": "_text_Sleep__n_2_____text_Sleep___n_1_",
+                "enabled": "enabled",
+                "name": "\\text{Sleep}(n_2) ⊇ \\text{Sleep} (n_1)",
+                "merged": false,
+                "keywords": [
+                  "\\text{Sleep}(n_2) ⊇ \\text{Sleep} (n_1)"
+                ],
+                "eventId": "45"
+              },
+              {
+                "type": "show",
+                "id": "Group_25",
+                "enabled": "enabled",
+                "name": "→ runs explored from included in runs explored from",
+                "merged": true,
+                "keywords": [
+                  "→ runs explored from included in runs explored from"
+                ],
+                "eventId": "33"
+              },
+              {
+                "type": "hide",
+                "id": "Polygon_7",
+                "enabled": "enabled",
+                "name": "Polygon 7",
+                "merged": false,
+                "keywords": [
+                  "Polygon 7"
+                ],
+                "eventId": "32"
+              },
+              {
+                "type": "show",
+                "id": "Group_122",
+                "enabled": "enabled",
+                "name": "Combinatorial explosion!",
+                "merged": true,
+                "keywords": [
+                  "Combinatorial explosion!"
+                ],
+                "eventId": "46"
+              },
+              {
+                "type": "show",
+                "id": "Polygon_21",
+                "enabled": "enabled",
+                "name": "Polygon 21",
+                "merged": true,
+                "keywords": [
+                  "Polygon 21"
+                ],
+                "eventId": "48"
               }
             ],
             "keywords": [
-              "POR graphs with covering",
+              "Mazurkiewicz’s trace equivalence [Maz 95] Two runs are equivalent (~) if one can be obtained from the other by permuting adjacent independent actions.",
               "POR graph with covering"
             ],
             "eventId": "2",
-            "originalParams": {}
+            "originalParams": {
+              "Group_11": {
+                "opacity": 1
+              },
+              "Group_8": {
+                "opacity": 1
+              },
+              "Group_112": {
+                "opacity": 1
+              },
+              "Polygon_7": {
+                "opacity": 1
+              },
+              "Group_25": {
+                "opacity": 1
+              },
+              "Group_252": {
+                "opacity": 1
+              },
+              "Group_26": {
+                "opacity": 1
+              },
+              "_text_state___n_1_____text_state___n_2_": {
+                "opacity": 1
+              },
+              "_text_Sleep__n_2_____text_Sleep___n_1_": {
+                "opacity": 1
+              },
+              "Group_122": {
+                "opacity": 1
+              },
+              "Polygon_21": {
+                "opacity": 1
+              },
+              "Group_180": {
+                "opacity": 1
+              }
+            }
           },
           {
             "type": "child",
-            "name": "por with race reversals",
-            "id": "por_with_race_reversals",
+            "name": "races",
+            "id": "races",
             "enabled": "enabled",
             "merged": false,
             "children": [
               {
-                "type": "child",
-                "name": "races",
-                "id": "races",
+                "type": "show",
+                "id": "Group_27",
                 "enabled": "enabled",
+                "name": "Dynamic algorithm",
                 "merged": false,
-                "children": [],
                 "keywords": [
-                  "Races",
-                  "races"
+                  "Dynamic algorithm"
                 ],
-                "eventId": "2",
-                "originalParams": {}
+                "eventId": "9"
+              },
+              {
+                "type": "show",
+                "id": "Group_275",
+                "enabled": "enabled",
+                "name": "?",
+                "merged": false,
+                "keywords": [
+                  "?"
+                ],
+                "eventId": "4"
+              },
+              {
+                "type": "show",
+                "id": "Group_39",
+                "enabled": "enabled",
+                "name": "Group 39",
+                "merged": false,
+                "keywords": [
+                  "Group 39"
+                ],
+                "eventId": "10"
+              },
+              {
+                "type": "show",
+                "id": "Group_31",
+                "enabled": "enabled",
+                "name": "There is a dependency chain between and along",
+                "merged": true,
+                "keywords": [
+                  "and and",
+                  "There is a dependency chain between and along",
+                  "There is no run with before in this system"
+                ],
+                "eventId": "5"
+              },
+              {
+                "type": "show",
+                "id": "Group_122",
+                "enabled": "enabled",
+                "name": "Combinatorial explosion!",
+                "merged": false,
+                "keywords": [
+                  "Combinatorial explosion!"
+                ],
+                "eventId": "6"
               },
               {
                 "type": "child",
-                "name": "Explore not below",
-                "id": "Explore_not_below",
+                "name": "races def",
+                "id": "races_def2",
                 "enabled": "enabled",
                 "merged": false,
-                "children": [],
-                "keywords": [
-                  "Explore not below"
+                "children": [
+                  {
+                    "type": "child",
+                    "name": "crace",
+                    "id": "crace2",
+                    "enabled": "enabled",
+                    "merged": false,
+                    "children": [
+                      {
+                        "type": "show",
+                        "id": "Dynamic_algorithm",
+                        "enabled": "enabled",
+                        "name": "Dynamic algorithm",
+                        "merged": false,
+                        "keywords": [
+                          "Dynamic algorithm"
+                        ],
+                        "eventId": "13"
+                      },
+                      {
+                        "type": "show",
+                        "id": "C_enabled_and",
+                        "enabled": "enabled",
+                        "name": "C-enabled and",
+                        "merged": false,
+                        "keywords": [
+                          "S-enabled and",
+                          "C-enabled and"
+                        ],
+                        "eventId": "14"
+                      },
+                      {
+                        "type": "show",
+                        "id": "Is_there_a_run_with_before__",
+                        "enabled": "enabled",
+                        "name": "Is there a run with before ?",
+                        "merged": false,
+                        "keywords": [
+                          "Is there a run with before ?"
+                        ],
+                        "eventId": "15"
+                      },
+                      {
+                        "type": "show",
+                        "id": "C_enabled_in_S_enabled_in_no_dependency_chain_between_and",
+                        "enabled": "enabled",
+                        "name": "C-enabled in S-enabled in no dependency chain between and",
+                        "merged": false,
+                        "keywords": [
+                          "S-enabled in C-enabled in no dependency chain between and",
+                          "C-enabled in S-enabled in no dependency chain between and"
+                        ],
+                        "eventId": "16"
+                      },
+                      {
+                        "type": "show",
+                        "id": "Group_413",
+                        "enabled": "enabled",
+                        "name": "S-enabled",
+                        "merged": true,
+                        "keywords": [
+                          "C-enabled",
+                          "S-enabled"
+                        ],
+                        "eventId": "12"
+                      }
+                    ],
+                    "keywords": [
+                      "S-race",
+                      "crace"
+                    ],
+                    "eventId": "1",
+                    "originalParams": {
+                      "Group_30": {
+                        "opacity": 1
+                      },
+                      "Group_413": {
+                        "opacity": 1
+                      },
+                      "Dynamic_algorithm": {
+                        "opacity": 1
+                      },
+                      "C_enabled_and": {
+                        "opacity": 1
+                      },
+                      "Is_there_a_run_with_before__": {
+                        "opacity": 1
+                      },
+                      "C_enabled_in_S_enabled_in_no_dependency_chain_between_and": {
+                        "opacity": 1
+                      }
+                    }
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_56",
+                    "enabled": "enabled",
+                    "name": "C-enabled in S-enabled in no dependency chain between and",
+                    "merged": false,
+                    "keywords": [
+                      "C-race",
+                      "C-enabled and",
+                      "Is there a run with before ?",
+                      "S-enabled",
+                      "Dynamic algorithm",
+                      "C-enabled in S-enabled in no dependency chain between and"
+                    ],
+                    "eventId": "5"
+                  }
                 ],
-                "eventId": "3",
-                "originalParams": {}
+                "keywords": [
+                  "races def"
+                ],
+                "eventId": "7",
+                "originalParams": {
+                  "Group_45": {
+                    "opacity": 1
+                  },
+                  "Group_56": {
+                    "opacity": 1
+                  }
+                }
               },
               {
                 "type": "child",
-                "name": "Explore above",
-                "id": "Explore_above",
+                "name": "algo not below",
+                "id": "algo_not_below",
                 "enabled": "enabled",
                 "merged": false,
-                "children": [],
-                "keywords": [
-                  "Explore above"
+                "children": [
+                  {
+                    "type": "show",
+                    "id": "Group_1712",
+                    "enabled": "enabled",
+                    "name": "eat(cat_food) S-enabled and depends on eat(cat_food)",
+                    "merged": false,
+                    "keywords": [
+                      "eat(Cléo) S-enabled and depends on eat(Azur)",
+                      "eat(Cléo) does not become C-enabled",
+                      "eat(cat_food) S-enabled and depends on eat(cat_food)"
+                    ],
+                    "eventId": "65"
+                  },
+                  {
+                    "type": "hide",
+                    "id": "Group_1712",
+                    "enabled": "enabled",
+                    "name": "eat(cat_food) S-enabled and depends on eat(cat_food)",
+                    "merged": false,
+                    "keywords": [
+                      "eat(cat_food) S-enabled and depends on eat(cat_food)"
+                    ],
+                    "eventId": "66"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_172",
+                    "enabled": "enabled",
+                    "name": "eat(cat_food) S-enabled and depends on eat(cat_food)",
+                    "merged": false,
+                    "keywords": [
+                      "eat(Azur) C-enabled",
+                      "eat(Azur) S-enabled and depends on eat(Cléo)",
+                      "S-race",
+                      "eat(cat_food) S-enabled and depends on eat(cat_food)"
+                    ],
+                    "eventId": "67"
+                  },
+                  {
+                    "type": "hide",
+                    "id": "Group_172",
+                    "enabled": "enabled",
+                    "name": "eat(cat_food) S-enabled and depends on eat(cat_food)",
+                    "merged": false,
+                    "keywords": [
+                      "eat(cat_food) S-enabled and depends on eat(cat_food)"
+                    ],
+                    "eventId": "70"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_1722",
+                    "enabled": "enabled",
+                    "name": "Group 172",
+                    "merged": true,
+                    "keywords": [
+                      "eat(Azur)",
+                      "Group 172"
+                    ],
+                    "eventId": "71"
+                  },
+                  {
+                    "type": "show",
+                    "id": "_eat_cat_food_____3",
+                    "enabled": "enabled",
+                    "name": "{eat(cat_food)} {}",
+                    "merged": true,
+                    "keywords": [
+                      "{eat(cat_food)} {}"
+                    ],
+                    "eventId": "74"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_173",
+                    "enabled": "enabled",
+                    "name": "eat(cat_food)",
+                    "merged": true,
+                    "keywords": [
+                      "eat(Cléo)",
+                      "{}",
+                      "eat(cat_food)"
+                    ],
+                    "eventId": "75"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Arrow_168",
+                    "enabled": "enabled",
+                    "name": "Arrow 168",
+                    "merged": false,
+                    "keywords": [
+                      "Arrow 168"
+                    ],
+                    "eventId": "76"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_1732",
+                    "enabled": "enabled",
+                    "name": "eat(cat_food) S-enabled and depends on await(cat_fresh)",
+                    "merged": false,
+                    "keywords": [
+                      "S-race",
+                      "eat(Cléo) S-enabled and depends on await(Azur)",
+                      "eat(Cléo) C-enabled",
+                      "eat(cat_food) S-enabled and depends on await(cat_fresh)"
+                    ],
+                    "eventId": "77"
+                  },
+                  {
+                    "type": "hide",
+                    "id": "Group_1732",
+                    "enabled": "enabled",
+                    "name": "eat(cat_food) S-enabled and depends on await(cat_fresh)",
+                    "merged": false,
+                    "keywords": [
+                      "eat(cat_food) S-enabled and depends on await(cat_fresh)"
+                    ],
+                    "eventId": "78"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_174",
+                    "enabled": "enabled",
+                    "name": "eat(cat_food)",
+                    "merged": true,
+                    "keywords": [
+                      "eat(Cléo)",
+                      "eat(cat_food)"
+                    ],
+                    "eventId": "81"
+                  },
+                  {
+                    "type": "show",
+                    "id": "_____3",
+                    "enabled": "enabled",
+                    "name": "{} {}",
+                    "merged": true,
+                    "keywords": [
+                      "{} {}"
+                    ],
+                    "eventId": "82"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_175",
+                    "enabled": "enabled",
+                    "name": "eat(dog_food)",
+                    "merged": true,
+                    "keywords": [
+                      "eat(Niebla)",
+                      "{}",
+                      "eat(dog_food)"
+                    ],
+                    "eventId": "85"
+                  },
+                  {
+                    "type": "child",
+                    "name": "choices of actions",
+                    "id": "choices_of_actions",
+                    "enabled": "enabled",
+                    "merged": false,
+                    "children": [
+                      {
+                        "type": "show",
+                        "id": "Group_76",
+                        "enabled": "enabled",
+                        "name": "Group 76",
+                        "merged": false,
+                        "keywords": [
+                          ": actions of v that can be executed only because of the execution of e",
+                          "Group 76"
+                        ],
+                        "eventId": "1"
+                      },
+                      {
+                        "type": "show",
+                        "id": "Group_81",
+                        "enabled": "enabled",
+                        "name": "Group 81",
+                        "merged": false,
+                        "keywords": [
+                          "Group 81"
+                        ],
+                        "eventId": "1"
+                      },
+                      {
+                        "type": "show",
+                        "id": "Group_80",
+                        "enabled": "enabled",
+                        "name": "actions that can be executed without the execution of",
+                        "merged": true,
+                        "keywords": [
+                          "actions that can be executed without the execution of"
+                        ],
+                        "eventId": "2"
+                      },
+                      {
+                        "type": "show",
+                        "id": "Not_below2",
+                        "enabled": "enabled",
+                        "name": "Not below",
+                        "merged": false,
+                        "keywords": [
+                          "Not below"
+                        ],
+                        "eventId": "8"
+                      },
+                      {
+                        "type": "show",
+                        "id": "Group_84",
+                        "enabled": "enabled",
+                        "name": "actions that need to be executed before",
+                        "merged": true,
+                        "keywords": [
+                          "actions that need to be executed before"
+                        ],
+                        "eventId": "3"
+                      },
+                      {
+                        "type": "show",
+                        "id": "above3",
+                        "enabled": "enabled",
+                        "name": "above",
+                        "merged": true,
+                        "keywords": [
+                          "above"
+                        ],
+                        "eventId": "9"
+                      },
+                      {
+                        "type": "hide",
+                        "id": "Not_below",
+                        "enabled": "enabled",
+                        "name": "Not below",
+                        "merged": true,
+                        "keywords": [
+                          "Not below"
+                        ],
+                        "eventId": "10"
+                      },
+                      {
+                        "type": "show",
+                        "id": "choose_an_action_first_not_below_choose_an_action_first_above",
+                        "enabled": "enabled",
+                        "name": "choose an action first not-below choose an action first above",
+                        "merged": false,
+                        "keywords": [
+                          "choose an action first not-below choose an action first above"
+                        ],
+                        "eventId": "4"
+                      },
+                      {
+                        "type": "child",
+                        "name": "not below",
+                        "id": "not_below",
+                        "enabled": "enabled",
+                        "merged": false,
+                        "children": [
+                          {
+                            "type": "show",
+                            "id": "Group_86",
+                            "enabled": "enabled",
+                            "name": "races with e",
+                            "merged": false,
+                            "keywords": [
+                              "races with e",
+                              "not below"
+                            ],
+                            "eventId": "1"
+                          },
+                          {
+                            "type": "hide",
+                            "id": "Group_862",
+                            "enabled": "enabled",
+                            "name": "?",
+                            "merged": false,
+                            "keywords": [
+                              "?"
+                            ],
+                            "eventId": "3"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Group_863",
+                            "enabled": "enabled",
+                            "name": "Group 86",
+                            "merged": true,
+                            "keywords": [
+                              "Group 86"
+                            ],
+                            "eventId": "4"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Group_87",
+                            "enabled": "enabled",
+                            "name": "Group 87",
+                            "merged": true,
+                            "keywords": [
+                              "Group 87"
+                            ],
+                            "eventId": "5"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Group_88",
+                            "enabled": "enabled",
+                            "name": "The reexploration procedure needs to be launched for each child of the node",
+                            "merged": false,
+                            "keywords": [
+                              "Store only one run at a time: polynomial memory consumption",
+                              "The reexploration procedure needs to be launched for each child of the node"
+                            ],
+                            "eventId": "6"
+                          }
+                        ],
+                        "keywords": [
+                          "?",
+                          "Reexplore to compute all races with",
+                          "Fillbacktrack not below",
+                          "not below"
+                        ],
+                        "eventId": "6",
+                        "originalParams": {
+                          "Group_86": {
+                            "opacity": 1
+                          },
+                          "Group_862": {
+                            "opacity": 1
+                          },
+                          "Group_863": {
+                            "opacity": 1
+                          },
+                          "Group_87": {
+                            "opacity": 1
+                          },
+                          "Group_88": {
+                            "opacity": 1
+                          }
+                        }
+                      },
+                      {
+                        "type": "child",
+                        "name": "above",
+                        "id": "above",
+                        "enabled": "enabled",
+                        "merged": false,
+                        "children": [
+                          {
+                            "type": "show",
+                            "id": "Group_86",
+                            "enabled": "enabled",
+                            "name": "races with e",
+                            "merged": false,
+                            "keywords": [
+                              "races with e",
+                              "not below",
+                              "above"
+                            ],
+                            "eventId": "4"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Group_89",
+                            "enabled": "enabled",
+                            "name": "Group 89",
+                            "merged": false,
+                            "keywords": [
+                              "Group 89"
+                            ],
+                            "eventId": "1"
+                          },
+                          {
+                            "type": "hide",
+                            "id": "Group_88",
+                            "enabled": "enabled",
+                            "name": "?",
+                            "merged": true,
+                            "keywords": [
+                              "?"
+                            ],
+                            "eventId": "2"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Group_90",
+                            "enabled": "enabled",
+                            "name": "Group 90",
+                            "merged": true,
+                            "keywords": [
+                              "Group 90"
+                            ],
+                            "eventId": "3"
+                          },
+                          {
+                            "type": "show",
+                            "id": "The_reexploration_procedure_needs_to_be_launched_for_each_child_of_the_node",
+                            "enabled": "enabled",
+                            "name": "The reexploration procedure needs to be launched for each child of the node",
+                            "merged": false,
+                            "keywords": [
+                              "Store only one run at a time: polynomial memory consumption",
+                              "Choice of actions more constrained, can produce bigger Backtrack sets",
+                              "The reexploration procedure needs to be launched for each child of the node"
+                            ],
+                            "eventId": "5"
+                          }
+                        ],
+                        "keywords": [
+                          "?",
+                          "Reexplore to compute all races with",
+                          "Fillbacktrack above",
+                          "above"
+                        ],
+                        "eventId": "5",
+                        "originalParams": {
+                          "Group_89": {
+                            "opacity": 1
+                          },
+                          "Group_88": {
+                            "opacity": 1
+                          },
+                          "Group_90": {
+                            "opacity": 1
+                          },
+                          "Group_86": {
+                            "opacity": 1
+                          },
+                          "The_reexploration_procedure_needs_to_be_launched_for_each_child_of_the_node": {
+                            "opacity": 1
+                          }
+                        }
+                      },
+                      {
+                        "type": "child",
+                        "name": "Fillbacktrack",
+                        "id": "Fillbacktrack",
+                        "enabled": "enabled",
+                        "merged": false,
+                        "children": [
+                          {
+                            "type": "show",
+                            "id": "Arrow_125",
+                            "enabled": "enabled",
+                            "name": "Arrow 125",
+                            "merged": false,
+                            "keywords": [
+                              "Arrow 125"
+                            ],
+                            "eventId": "1"
+                          },
+                          {
+                            "type": "hide",
+                            "id": "Arrow_125",
+                            "enabled": "enabled",
+                            "name": "Arrow 125",
+                            "merged": false,
+                            "keywords": [
+                              "Arrow 125"
+                            ],
+                            "eventId": "2"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Arrow_127",
+                            "enabled": "enabled",
+                            "name": "Arrow 127",
+                            "merged": true,
+                            "keywords": [
+                              "Arrow 127"
+                            ],
+                            "eventId": "5"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Arrow_126",
+                            "enabled": "enabled",
+                            "name": "Arrow 126",
+                            "merged": false,
+                            "keywords": [
+                              "Arrow 126"
+                            ],
+                            "eventId": "6"
+                          },
+                          {
+                            "type": "hide",
+                            "id": "Arrow_126",
+                            "enabled": "enabled",
+                            "name": "Arrow 126",
+                            "merged": false,
+                            "keywords": [
+                              "Arrow 126"
+                            ],
+                            "eventId": "7"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Group_93",
+                            "enabled": "enabled",
+                            "name": "...",
+                            "merged": true,
+                            "keywords": [
+                              "..."
+                            ],
+                            "eventId": "8"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Arrow_129",
+                            "enabled": "enabled",
+                            "name": "Arrow 129",
+                            "merged": true,
+                            "keywords": [
+                              "Arrow 129"
+                            ],
+                            "eventId": "9"
+                          },
+                          {
+                            "type": "show",
+                            "id": "The_reexploration_procedure_needs_to_be_launched_for_each_child_of_the_node2",
+                            "enabled": "enabled",
+                            "name": "The reexploration procedure needs to be launched for each child of the node",
+                            "merged": false,
+                            "keywords": [
+                              "Store only one run at a time: polynomial memory consumption",
+                              "Transitions explored exponentially many times",
+                              "The reexploration procedure needs to be launched for each child of the node"
+                            ],
+                            "eventId": "19"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Group_92",
+                            "enabled": "enabled",
+                            "name": "?",
+                            "merged": false,
+                            "keywords": [
+                              "?",
+                              "FillBacktrack DAG"
+                            ],
+                            "eventId": "11"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Group_922",
+                            "enabled": "enabled",
+                            "name": "Group 92",
+                            "merged": false,
+                            "keywords": [
+                              "Group 92"
+                            ],
+                            "eventId": "12"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Group_94",
+                            "enabled": "enabled",
+                            "name": "Group 94",
+                            "merged": false,
+                            "keywords": [
+                              "Group 94"
+                            ],
+                            "eventId": "14"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Group_932",
+                            "enabled": "enabled",
+                            "name": "Group 93",
+                            "merged": false,
+                            "keywords": [
+                              "Group 93"
+                            ],
+                            "eventId": "13"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Group_95",
+                            "enabled": "enabled",
+                            "name": "Group 95",
+                            "merged": false,
+                            "keywords": [
+                              "Group 95"
+                            ],
+                            "eventId": "15"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Group_95",
+                            "enabled": "enabled",
+                            "name": "Group 95",
+                            "merged": false,
+                            "keywords": [
+                              "Group 95"
+                            ],
+                            "eventId": "16"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Arrow_133",
+                            "enabled": "enabled",
+                            "name": "Arrow 133",
+                            "merged": false,
+                            "keywords": [
+                              "Arrow 133"
+                            ],
+                            "eventId": "17"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Group_96",
+                            "enabled": "enabled",
+                            "name": "...",
+                            "merged": false,
+                            "keywords": [
+                              "..."
+                            ],
+                            "eventId": "18"
+                          },
+                          {
+                            "type": "show",
+                            "id": "The_reexploration_procedure_needs_to_be_launched_for_each_child_of_the_node3",
+                            "enabled": "enabled",
+                            "name": "The reexploration procedure needs to be launched for each child of the node",
+                            "merged": false,
+                            "keywords": [
+                              "Store only one run at a time: polynomial memory consumption",
+                              "Higher memory consumption → need to store some pieces of information to compute the races",
+                              "The reexploration procedure needs to be launched for each child of the node"
+                            ],
+                            "eventId": "20"
+                          }
+                        ],
+                        "keywords": [
+                          "Challenges of the reexploration procedure FillBacktrack",
+                          "?",
+                          "FillBacktrack tree",
+                          "Fillbacktrack"
+                        ],
+                        "eventId": "7",
+                        "originalParams": {
+                          "Arrow_125": {
+                            "opacity": 1
+                          },
+                          "Arrow_127": {
+                            "opacity": 1
+                          },
+                          "Arrow_126": {
+                            "opacity": 1
+                          },
+                          "Group_93": {
+                            "opacity": 1
+                          },
+                          "Arrow_129": {
+                            "opacity": 1
+                          },
+                          "Group_92": {
+                            "opacity": 1
+                          },
+                          "Group_922": {
+                            "opacity": 1
+                          },
+                          "Group_932": {
+                            "opacity": 1
+                          },
+                          "Group_94": {
+                            "opacity": 1
+                          },
+                          "Group_95": {
+                            "opacity": 1
+                          },
+                          "Arrow_133": {
+                            "opacity": 1
+                          },
+                          "Group_96": {
+                            "opacity": 1
+                          },
+                          "The_reexploration_procedure_needs_to_be_launched_for_each_child_of_the_node2": {
+                            "opacity": 1
+                          },
+                          "The_reexploration_procedure_needs_to_be_launched_for_each_child_of_the_node3": {
+                            "opacity": 1
+                          }
+                        }
+                      }
+                    ],
+                    "keywords": [
+                      "?",
+                      "has a Srace with",
+                      "→ what choice for the action to add to Backtrack?",
+                      "Not below",
+                      "vs.",
+                      "above",
+                      "choices of actions"
+                    ],
+                    "eventId": "47",
+                    "originalParams": {
+                      "Group_76": {
+                        "opacity": 1
+                      },
+                      "Group_81": {
+                        "opacity": 1
+                      },
+                      "Group_80": {
+                        "opacity": 1
+                      },
+                      "Group_84": {
+                        "opacity": 1
+                      },
+                      "choose_an_action_first_not_below_choose_an_action_first_above": {
+                        "opacity": 1
+                      },
+                      "Not_below2": {
+                        "opacity": 1
+                      },
+                      "above3": {
+                        "opacity": 1
+                      },
+                      "Not_below": {
+                        "opacity": 1
+                      }
+                    }
+                  }
                 ],
-                "eventId": "4",
-                "originalParams": {}
-              },
-              {
-                "type": "child",
-                "name": "not below vs above",
-                "id": "not_below_vs_above",
-                "enabled": "enabled",
-                "merged": false,
-                "children": [],
                 "keywords": [
-                  "Not below vs above",
-                  "not below vs above"
+                  "Backtrack={await(cat_fresh)} Sleep={}",
+                  "await(Azur)",
+                  "{eat(cat_food), eat(cat_food)} {}",
+                  "{eat(cat_food)} {}",
+                  "{eat(dog_food} {}",
+                  "eat(Azur)",
+                  "eat(Cléo)",
+                  "{}",
+                  "eat(Niebla)",
+                  "algo not below"
                 ],
-                "eventId": "5",
-                "originalParams": {}
+                "eventId": "8",
+                "originalParams": {
+                  "Group_1712": {
+                    "opacity": 1
+                  },
+                  "Group_172": {
+                    "opacity": 1
+                  },
+                  "_eat_cat_food_____2": {
+                    "opacity": 1
+                  },
+                  "Group_1722": {
+                    "opacity": 1
+                  },
+                  "_eat_cat_food_____3": {
+                    "opacity": 1
+                  },
+                  "Group_173": {
+                    "opacity": 1
+                  },
+                  "Arrow_168": {
+                    "opacity": 1
+                  },
+                  "Group_1732": {
+                    "opacity": 1
+                  },
+                  "Group_174": {
+                    "opacity": 1
+                  },
+                  "_____3": {
+                    "opacity": 1
+                  },
+                  "Group_175": {
+                    "opacity": 1
+                  }
+                }
               }
             ],
             "keywords": [
-              "POR with race reversals",
-              "por with race reversals"
+              "races"
             ],
-            "eventId": "3",
-            "originalParams": {}
+            "eventId": "8",
+            "originalParams": {
+              "Group_275": {
+                "opacity": 1
+              },
+              "Group_31": {
+                "opacity": 1
+              },
+              "Group_122": {
+                "opacity": 1
+              },
+              "Group_27": {
+                "opacity": 1
+              },
+              "Group_39": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "child",
+            "name": "lexicographic",
+            "id": "lexicographic",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Group_115",
+                "enabled": "enabled",
+                "name": "await(cat_fresh)",
+                "merged": false,
+                "keywords": [
+                  "eat(Cléo)",
+                  "eat(Azur)",
+                  "eat(Niebla)",
+                  "await(Azur)",
+                  "await(cat_fresh)"
+                ],
+                "eventId": "6"
+              },
+              {
+                "type": "show",
+                "id": "Line_30",
+                "enabled": "enabled",
+                "name": "Line 30",
+                "merged": false,
+                "keywords": [
+                  "Line 30"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "Group_175",
+                "enabled": "enabled",
+                "name": "Group 175",
+                "merged": false,
+                "keywords": [
+                  "{eat(Azur)}",
+                  "Group 175"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "Line_31",
+                "enabled": "enabled",
+                "name": "Line 31",
+                "merged": false,
+                "keywords": [
+                  "Line 31"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "Group_176",
+                "enabled": "enabled",
+                "name": "{eat(cat_food)}",
+                "merged": false,
+                "keywords": [
+                  "{eat(Cléo)}",
+                  "{eat(cat_food)}"
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "Group_1762",
+                "enabled": "enabled",
+                "name": "{eat(cat_food)}",
+                "merged": false,
+                "keywords": [
+                  "{eat(cat_food)}"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "show",
+                "id": "Line_32",
+                "enabled": "enabled",
+                "name": "Line 32",
+                "merged": false,
+                "keywords": [
+                  "Line 32"
+                ],
+                "eventId": "4"
+              },
+              {
+                "type": "show",
+                "id": "Group_1763",
+                "enabled": "enabled",
+                "name": "{eat(cat_food), await(cat_fresh)}",
+                "merged": false,
+                "keywords": [
+                  "{eat(Cléo), await(Azur)}",
+                  "{eat(cat_food), await(cat_fresh)}"
+                ],
+                "eventId": "5"
+              }
+            ],
+            "keywords": [
+              "Key idea: use a lexicographic ordering on actions to identify a representative for each trace → enumerate runs according to the lexicographic ordering",
+              "lexicographic"
+            ],
+            "eventId": "12",
+            "originalParams": {
+              "Line_30": {
+                "opacity": 1
+              },
+              "Group_175": {
+                "opacity": 1
+              },
+              "Line_31": {
+                "opacity": 1
+              },
+              "Group_176": {
+                "opacity": 1
+              },
+              "Group_1762": {
+                "opacity": 1
+              },
+              "Line_32": {
+                "opacity": 1
+              },
+              "Group_1763": {
+                "opacity": 1
+              },
+              "Group_115": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "child",
+            "name": "implementation",
+            "id": "implementation",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "nopor__no_POR__builds_a_graph_with_DFS_ordering__states_explored_once",
+                "enabled": "enabled",
+                "name": "nopor: no POR, builds a graph with DFS ordering, states explored once",
+                "merged": false,
+                "keywords": [
+                  "nopor: no POR, builds a graph with DFS ordering, states explored once"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "lex__builds_a_POR_graph_with_covering__runs_enumerated_according_to_lexicographic_ordering",
+                "enabled": "enabled",
+                "name": "lex: runs enumerated according to lexicographic ordering",
+                "merged": false,
+                "keywords": [
+                  "lex: runs enumerated according to lexicographic ordering"
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "nopor__no_POR__builds_a_graph_with_DFS_ordering__states_explored_once2",
+                "enabled": "enabled",
+                "name": "dyn1: race reversals detection computed by reexploring each run from the node, heuristics of actions to explore=prioritize the execution of actions that have a race → race reversals detection needed only for first child of each node",
+                "merged": false,
+                "keywords": [
+                  "dyn1: race reversals detection computed by reexploring each run from the node, heuristics of actions to explore=prioritize the execution of actions that have a race → race reversals detection needed only for first child of each node"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "show",
+                "id": "dyn1__race_reversals_detection_computed_by_reexploring_each_run_from_the_node__heuristics_of_actions_to_explore_executed_as_soon_as_possible_the_actions_that_have_a_race___race_reversals_detection_needed_only_for_first_child_of_each_node",
+                "enabled": "enabled",
+                "name": "dyn2: race reversals detection computed by reexploring each run from the node as a graph (i.e. each transition explored once), heuristics of actions to explore= → race reversals detection needed only for first child of each node",
+                "merged": false,
+                "keywords": [
+                  "dyn2: race reversals detection computed by reexploring each run from the node as a graph (i.e. each transition explored once), heuristics of actions to explore= → race reversals detection needed only for first child of each node"
+                ],
+                "eventId": "5"
+              },
+              {
+                "type": "show",
+                "id": "The_experiments_are_launched_on_a_computer_with_processor_Intel_R__Core_TM__i7_9750H_CPU__2_60GHz_with_16GB_of_RAM",
+                "enabled": "enabled",
+                "name": "The experiments are launched on a computer with processor Intel(R) Core(TM) i7-9750H CPU @2.60GHz with 16GB of RAM",
+                "merged": false,
+                "keywords": [
+                  "The experiments are launched on a computer with processor Intel(R) Core(TM) i7-9750H CPU @2.60GHz with 16GB of RAM"
+                ],
+                "eventId": "4"
+              }
+            ],
+            "keywords": [
+              "Algorithms implemented in TChecker, model checker developed in LaBRI in C++",
+              "implementation"
+            ],
+            "eventId": "11",
+            "originalParams": {
+              "nopor__no_POR__builds_a_graph_with_DFS_ordering__states_explored_once": {
+                "opacity": 1
+              },
+              "lex__builds_a_POR_graph_with_covering__runs_enumerated_according_to_lexicographic_ordering": {
+                "opacity": 1
+              },
+              "nopor__no_POR__builds_a_graph_with_DFS_ordering__states_explored_once2": {
+                "opacity": 1
+              },
+              "The_experiments_are_launched_on_a_computer_with_processor_Intel_R__Core_TM__i7_9750H_CPU__2_60GHz_with_16GB_of_RAM": {
+                "opacity": 1
+              },
+              "dyn1__race_reversals_detection_computed_by_reexploring_each_run_from_the_node__heuristics_of_actions_to_explore_executed_as_soon_as_possible_the_actions_that_have_a_race___race_reversals_detection_needed_only_for_first_child_of_each_node": {
+                "opacity": 1
+              }
+            }
           },
           {
             "type": "child",
@@ -341,9 +3042,141 @@
             "id": "experiments",
             "enabled": "enabled",
             "merged": false,
-            "children": [],
+            "children": [
+              {
+                "type": "child",
+                "name": "peterson",
+                "id": "peterson",
+                "enabled": "enabled",
+                "merged": false,
+                "children": [
+                  {
+                    "type": "show",
+                    "id": "image_10",
+                    "enabled": "enabled",
+                    "name": "image 10",
+                    "merged": false,
+                    "keywords": [
+                      "image 10"
+                    ],
+                    "eventId": "1"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Race_reversals_computation_too_expensive_",
+                    "enabled": "enabled",
+                    "name": "Race reversals computation too expensive!",
+                    "merged": false,
+                    "keywords": [
+                      "Race reversals computation too expensive!"
+                    ],
+                    "eventId": "2"
+                  }
+                ],
+                "keywords": [
+                  "Peterson’s mutual exclusion protocol",
+                  "peterson"
+                ],
+                "eventId": "1",
+                "originalParams": {
+                  "image_10": {
+                    "opacity": 1
+                  },
+                  "Race_reversals_computation_too_expensive_": {
+                    "opacity": 1
+                  }
+                }
+              },
+              {
+                "type": "child",
+                "name": "filesystem",
+                "id": "filesystem",
+                "enabled": "enabled",
+                "merged": false,
+                "children": [
+                  {
+                    "type": "show",
+                    "id": "image_12",
+                    "enabled": "enabled",
+                    "name": "image 12",
+                    "merged": false,
+                    "keywords": [
+                      "image 12"
+                    ],
+                    "eventId": "1"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Race_reversals_computation_too_expensive_",
+                    "enabled": "enabled",
+                    "name": "Race reversals outperform other algorithms!",
+                    "merged": false,
+                    "keywords": [
+                      "Race reversals outperform other algorithms!"
+                    ],
+                    "eventId": "2"
+                  }
+                ],
+                "keywords": [
+                  "Filesystem from [FlaGod05]",
+                  "filesystem"
+                ],
+                "eventId": "2",
+                "originalParams": {
+                  "image_12": {
+                    "opacity": 1
+                  },
+                  "Race_reversals_computation_too_expensive_": {
+                    "opacity": 1
+                  }
+                }
+              },
+              {
+                "type": "child",
+                "name": "lastzero",
+                "id": "lastzero",
+                "enabled": "enabled",
+                "merged": false,
+                "children": [
+                  {
+                    "type": "show",
+                    "id": "image_14",
+                    "enabled": "enabled",
+                    "name": "image 14",
+                    "merged": false,
+                    "keywords": [
+                      "image 14"
+                    ],
+                    "eventId": "1"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Race_reversals_computation_too_expensive_",
+                    "enabled": "enabled",
+                    "name": "Race reversals scale slighlty more!",
+                    "merged": false,
+                    "keywords": [
+                      "Race reversals scale slighlty more!"
+                    ],
+                    "eventId": "2"
+                  }
+                ],
+                "keywords": [
+                  "Lastzero from [AAJS14]",
+                  "lastzero"
+                ],
+                "eventId": "3",
+                "originalParams": {
+                  "image_14": {
+                    "opacity": 1
+                  },
+                  "Race_reversals_computation_too_expensive_": {
+                    "opacity": 1
+                  }
+                }
+              }
+            ],
             "keywords": [
-              "Experiments",
               "experiments"
             ],
             "eventId": "4",
@@ -352,7 +3185,10 @@
         ],
         "keywords": [
           "Contributions of this thesis",
-          "client/server systems as a unified framework POR graph with covering, i.e. all ingredients of our algorithms lexicographic stateful por por with race reversals Implementation and experiments",
+          "Client/server systems",
+          "POR graph with covering",
+          "Lexicographic algorithm → use a lexicographic ordering on actions of the system to identify a representative per equivalence class; enumerates lex-runs",
+          "Implementation and experiments",
           "Contributions"
         ],
         "eventId": "3",
@@ -366,18 +3202,45 @@
         "merged": false,
         "children": [],
         "keywords": [
-          "Conclusion and future work",
+          "Conclusion",
+          "Client/server systems to abstract away implementation details Algorithms that combine source sets, sleep sets and a covering relation An algorithm using a lexicographic ordering to identify representatives of the traces of the system Algorithms with race reversals and two heuristics for the choice of actions to explore Implementation and experiments",
           "conclusion and future work"
         ],
         "eventId": "4",
+        "originalParams": {
+          "Refine_the_dependency_relation__e_g__two_consecutive_reads_of_a_variable_are_independent__Application_to_cyclic_systems_Application_to_real_time_concurrent_systems__initial_PhD_subject_": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "child",
+        "name": "perspectives",
+        "id": "perspectives",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [],
+        "keywords": [
+          "Perspectives",
+          "Refine the dependency relation (e.g. two consecutive reads of a variable are independent) Application to cyclic systems Application to real-time concurrent systems (initial PhD subject)",
+          "eat(Cléo)",
+          "await(Azur)",
+          "eat(Azur)",
+          "perspectives"
+        ],
+        "eventId": "7",
         "originalParams": {}
       }
     ],
     "keywords": [
       "Stateful Partial-Order Reduction Methods for Concurrent Systems with Blocking Instructions",
       "Sarah Larroze-Jardiné",
-      "PhD Defense - December 16, 2025, Bordeaux, France",
+      "PhD Defense - December 16, 2025",
       "Supervised by Frédéric Herbreteau and Igor Walukiewicz",
+      "Loïc Hélouët Didier Lime Marthe Bonamy Silvano Dal Zilio",
+      "Directeur de Recherche INRIA Professeur des universités Directrice de Recherche CNRS Chargé de Recherche CNRS",
+      "IRISA Ecole Centrale de Nantes LaBRI Laas",
+      "Rapporteur Rapporteur Examinatrice Examinateur",
       "new slide"
     ],
     "eventId": "root",
