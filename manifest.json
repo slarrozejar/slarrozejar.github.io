@@ -3230,6 +3230,18 @@
         ],
         "eventId": "7",
         "originalParams": {}
+      },
+      {
+        "type": "show",
+        "id": "Group_184",
+        "enabled": "enabled",
+        "name": "*No animal was harmed in the making of this presentation",
+        "merged": false,
+        "keywords": [
+          "Thank you!",
+          "*No animal was harmed in the making of this presentation"
+        ],
+        "eventId": "8"
       }
     ],
     "keywords": [
@@ -3244,7 +3256,11 @@
       "new slide"
     ],
     "eventId": "root",
-    "originalParams": {}
+    "originalParams": {
+      "Group_184": {
+        "opacity": 1
+      }
+    }
   },
   "treeTimeLine": [],
   "chronicleTimeLine": []
